@@ -64,6 +64,7 @@
         <p>Special Hawaiian Collection is here with great discount!!</p>
         <div class="pro-container">
             <div class="pro">
+                <?php $item_id=1; ?>
                 <img class="product" src="img/products/p1.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
@@ -77,10 +78,13 @@
                     </div>
                     <h4>$79.99</h4>
                 </div>
-                <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a>
+                <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
+                <a href="<?php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?php echo $item_id; ?>" ><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a>
+
             </div>
 
             <div class="pro">
+                <?php $item_id=2; ?>
                 <img class="product" src="img/products/p2.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
@@ -94,10 +98,12 @@
                     </div>
                     <h4>$79.99</h4>
                 </div>
-                <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a>
+                <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
+                <a href="<?php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?php echo $item_id; ?>" ><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a>
             </div>
             
             <div class="pro">
+                <?php $item_id=3; ?>
                 <img class="product" src="img/products/p3.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
@@ -111,10 +117,12 @@
                     </div>
                     <h4>$79.99</h4>
                 </div>
-                <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a>
+                <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
+                <a href="<?php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?php echo $item_id; ?>" ><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a>
             </div>
             
             <div class="pro">
+                <?php $item_id=4; ?>
                 <img class="product" src="img/products/p4.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
@@ -128,10 +136,12 @@
                     </div>
                     <h4>$79.99</h4>
                 </div>
-                <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a>
+                <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
+                <a href="<?php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?php echo $item_id; ?>" ><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a>
             </div>
             
             <div class="pro">
+                <?php $item_id=5; ?>
                 <img class="product" src="img/products/p5.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
@@ -145,10 +155,12 @@
                     </div>
                     <h4>$79.99</h4>
                 </div>
-                <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a>
+                <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
+                <a href="<?php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?php echo $item_id; ?>" ><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a>
             </div>
             
             <div class="pro">
+                <?php $item_id=6; ?>
                 <img class="product" src="img/products/p6.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
@@ -162,7 +174,8 @@
                     </div>
                     <h4>$79.99</h4>
                 </div>
-                <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a>
+                <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
+                <a href="<?php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?php echo $item_id; ?>" ><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a>
             </div>
         </div>    
     </section>
