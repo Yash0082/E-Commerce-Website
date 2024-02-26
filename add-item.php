@@ -38,12 +38,12 @@
     $db_select2 = mysqli_select_db($conn2, 'ecommerce') or die(mysqli_error($conn2));
     
 
-    // Check if the value already exists in Column A
+    // Check if the value already exists in all_items_id col
     $query = "SELECT * FROM cart WHERE all_items_id = '$item_id'";
     $result = mysqli_query($conn, $query);
 
     if(mysqli_num_rows($result) > 0) {
-        // If the value exists, update Column B
+        // If the value exists, update item_quantity col
         $update_query = "UPDATE cart SET item_quantity = item_quantity+1 WHERE all_items_id = '$item_id'";
         $res1 = mysqli_query($conn, $update_query);
 
