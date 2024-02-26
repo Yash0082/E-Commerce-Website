@@ -2,9 +2,9 @@
 
     // include('config/constants.php');
     
-    if(isset($_GET['item_id']))
+    if(isset($_POST['item_id']))
     {
-        $item_id = $_GET['item_id'];
+        $item_id = $_POST['item_id'];
         
         $conn = mysqli_connect('localhost', 'root', 'root') or die(mysqli_error($conn));
         
@@ -47,18 +47,18 @@
         $update_query = "UPDATE cart SET item_quantity = item_quantity+1 WHERE all_items_id = '$item_id'";
         $res1 = mysqli_query($conn, $update_query);
 
-        if($res2==true)
-        {
-            $_SESSION['add'] = "Task Added Successfully.";
+        // if($res2==true)
+        // {
+        //     $_SESSION['add'] = "Task Added Successfully.";
             
-            header('location:'.'http://localhost/E-Commerce-Website/');
+        //     header('location:'.'http://localhost/E-Commerce-Website/');
             
-        }
-        else
-        {
-            $_SESSION['add_fail'] = "Failed to Add Task";
-            header('location:'.'http://localhost/E-Commerce-Website/'.'add-item.php');
-        }
+        // }
+        // else
+        // {
+        //     $_SESSION['add_fail'] = "Failed to Add Task";
+        //     header('location:'.'http://localhost/E-Commerce-Website/'.'add-item.php');
+        // }
     } 
     else {
         // If the value does not exist, insert a new row
@@ -70,18 +70,18 @@
     
         $res2 = mysqli_query($conn2, $sql2);
 
-        if($res2==true)
-        {
-            $_SESSION['add'] = "Task Added Successfully.";
+        // if($res2==true)
+        // {
+        //     $_SESSION['add'] = "Task Added Successfully.";
             
-            header('location:'.'http://localhost/E-Commerce-Website/');
+        //     header('location:'.'http://localhost/E-Commerce-Website/');
             
-        }
-        else
-        {
-            $_SESSION['add_fail'] = "Failed to Add Task";
-            header('location:'.'http://localhost/E-Commerce-Website/'.'add-item.php');
-        }
+        // }
+        // else
+        // {
+        //     $_SESSION['add_fail'] = "Failed to Add Task";
+        //     header('location:'.'http://localhost/E-Commerce-Website/'.'add-item.php');
+        // }
     }
 
 ?>
