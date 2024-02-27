@@ -1,14 +1,14 @@
 <?php 
 
-    // include('config/constants.php');
+    include('config/constants.php');
     
     if(isset($_POST['item_id']))
     {
         $item_id = $_POST['item_id'];
         
-        $conn = mysqli_connect('localhost', 'root', 'root') or die(mysqli_error($conn));
+        $conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error($conn));
         
-        $db_select = mysqli_select_db($conn, 'ecommerce') or die(mysqli_error($conn));
+        $db_select = mysqli_select_db($conn, DB_NAME) or die(mysqli_error($conn));
         
         $sql = "SELECT * FROM all_items WHERE item_id=$item_id";
         
@@ -27,15 +27,15 @@
     }
     else
     {
-        header('location:'.'http://localhost/E-Commerce-Website/');
+        header('location:'.SITEURL);
     }
 
 
 
     
-    $conn2 = mysqli_connect('localhost', 'root', 'root') or die(mysqli_error($conn2));
+    $conn2 = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error($conn2));
     
-    $db_select2 = mysqli_select_db($conn2, 'ecommerce') or die(mysqli_error($conn2));
+    $db_select2 = mysqli_select_db($conn2, DB_NAME) or die(mysqli_error($conn2));
     
 
     // Check if the value already exists in all_items_id col
@@ -51,13 +51,13 @@
         // {
         //     $_SESSION['add'] = "Task Added Successfully.";
             
-        //     header('location:'.'http://localhost/E-Commerce-Website/');
+        //     header('location:'.SITEURL);
             
         // }
         // else
         // {
         //     $_SESSION['add_fail'] = "Failed to Add Task";
-        //     header('location:'.'http://localhost/E-Commerce-Website/'.'add-item.php');
+        //     header('location:'.SITEURL.'add-item.php');
         // }
     } 
     else {
@@ -74,7 +74,7 @@
         // {
         //     $_SESSION['add'] = "Task Added Successfully.";
             
-        //     header('location:'.'http://localhost/E-Commerce-Website/');
+        //     header('location:'.SITEURL);
             
         // }
         // else
