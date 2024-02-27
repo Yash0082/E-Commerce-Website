@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H&Y</title>
+    <link rel="icon" type="image/png" href="img/H_Y-removebg-preview.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -166,6 +167,13 @@
             </div>
         </div>    
     </section>
+
+    <section id = "banner" class="section-m1">
+        <h4>Rewards</h4>
+        <h1>Claim your free trip to <span>HAWAI</span>!</h1>
+        <button class="normal">Know More</button>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
