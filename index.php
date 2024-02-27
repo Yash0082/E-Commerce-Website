@@ -30,7 +30,7 @@
 
 <body>
     <section id="header">
-        <a href="index.html" class="logo"><img height="60px" src="img/H_Y-removebg-preview.png" alt="logo"></a>
+        <a href="index.php" class="logo"><img height="60px" src="img/H_Y-removebg-preview.png" alt="logo"></a>
 
         <div>
             <ul id="navbar">
