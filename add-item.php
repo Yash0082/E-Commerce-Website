@@ -1,11 +1,26 @@
+<!-- <html>
+    <script>
+            
+            function update_subtotal(quantity) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "cart.php", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText); // Output: Response from add-item.php
+                }
+            };
+            xhr.send("quantity=" + quantity);
+        }
+    </script>
+</html> -->
 <?php 
 
     include('config/constants.php');
-    
     if(isset($_POST['item_id']))
     {
         $item_id = $_POST['item_id'];
-        
+
         $conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error($conn));
         
         $db_select = mysqli_select_db($conn, DB_NAME) or die(mysqli_error($conn));
@@ -46,19 +61,6 @@
         // If the value exists, update item_quantity col
         $update_query = "UPDATE cart SET item_quantity = item_quantity+1 WHERE all_items_id = '$item_id'";
         $res1 = mysqli_query($conn, $update_query);
-
-        // if($res2==true)
-        // {
-        //     $_SESSION['add'] = "Task Added Successfully.";
-            
-        //     header('location:'.SITEURL);
-            
-        // }
-        // else
-        // {
-        //     $_SESSION['add_fail'] = "Failed to Add Task";
-        //     header('location:'.SITEURL.'add-item.php');
-        // }
     } 
     else {
         // If the value does not exist, insert a new row
@@ -70,18 +72,15 @@
     
         $res2 = mysqli_query($conn2, $sql2);
 
-        // if($res2==true)
-        // {
-        //     $_SESSION['add'] = "Task Added Successfully.";
-            
-        //     header('location:'.SITEURL);
-            
-        // }
-        // else
-        // {
-        //     $_SESSION['add_fail'] = "Failed to Add Task";
-        //     header('location:'.'http://localhost/E-Commerce-Website/'.'add-item.php');
-        // }
     }
+
+    //check if quantity is updated in cart.php
+    if(isset($_POST['quantity']))
+    {
+        $item_quantiti = $_POST['quantity'];
+        $query2 = "UPDATE cart SET item_quantity = $item_quantiti WHERE all_items_id = '$item_id'";
+        $result2 = mysqli_query($conn, $query2);
+    }
+    
 
 ?>
