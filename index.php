@@ -7,6 +7,8 @@
     <title>H&Y</title>
     <link rel="icon" type="image/png" href="img/H_Y-removebg-preview.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
 
     <!-- New Script to add to cart w/o redirecting to add-item.php -->
@@ -110,7 +112,7 @@
 
 
                 <!-- Trying out feature -->
-                <img class="cart" src="img/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
+                <img class="cart" src="img/buttons/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
                 <!-- Trying out feature -->
 
 
@@ -136,7 +138,7 @@
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>">    <img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
 
-                <img class="cart" src="img/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
+                <img class="cart" src="img/buttons/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
             </div>
 
             <div class="pro">
@@ -156,7 +158,7 @@
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
-                <img class="cart" src="img/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
+                <img class="cart" src="img/buttons/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
 
             </div>
 
@@ -177,7 +179,7 @@
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
-                <img class="cart" src="img/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
+                <img class="cart" src="img/buttons/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
             </div>
 
             <div class="pro">
@@ -197,7 +199,7 @@
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
-                <img class="cart" src="img/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
+                <img class="cart" src="img/buttons/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
             </div>
 
             <div class="pro">
@@ -217,7 +219,7 @@
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
-                <img class="cart" src="img/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
+                <img class="cart" src="img/buttons/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
             </div>
         </div>
     </section>
@@ -228,6 +230,161 @@
         <button class="normal">Know More</button>
     </section>
 
+    <section id="product1" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Special Hawaiian Collection is here with great discount!!</p>
+        <div class="pro-container">
+            <div class="pro">
+                <?php $item_id = 7; ?>
+                <img class="product" src="img/products/p11.jpg" alt="shirt">
+                <div class="des">
+                    <span>H&Y</span>
+                    <h5>Palm Shorts</h5>
+                    <div class="star">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                    </div>
+                    <h4>$179.99</h4>
+                </div>
+                <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
+                <!-- <a href="<? //php echo "http://localhost/E-Commerce-Website/"; 
+                                ?>add-item.php?item_id=<? //php echo $item_id; 
+                                                        ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
+
+
+
+
+
+                <!-- Trying out feature -->
+                <img class="cart" src="img/buttons/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
+                <!-- Trying out feature -->
+
+
+
+
+            </div>
+
+            <div class="pro">
+                <?php $item_id = 8; ?>
+                <img class="product" src="img/products/p12.jpg" alt="shirt">
+                <div class="des">
+                    <span>H&Y</span>
+                    <h5>White Flower Shorts</h5>
+                    <div class="star">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                    </div>
+                    <h4>$149.99</h4>
+                </div>
+                <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
+                <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>">    <img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
+
+                <img class="cart" src="img/buttons/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
+            </div>
+
+            <div class="pro">
+                <?php $item_id = 9; ?>
+                <img class="product" src="img/products/p13.jpg" alt="shirt">
+                <div class="des">
+                    <span>H&Y</span>
+                    <h5>Island Blue shorts</h5>
+                    <div class="star">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                    </div>
+                    <h4>$199.99</h4>
+                </div>
+                <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
+                <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
+                <img class="cart" src="img/buttons/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
+
+            </div>
+
+            <div class="pro">
+                <?php $item_id = 10; ?>
+                <img class="product" src="img/products/p14.jpg" alt="shirt">
+                <div class="des">
+                    <span>H&Y</span>
+                    <h5>Grey Vintage Hat</h5>
+                    <div class="star">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                    </div>
+                    <h4>$179.99</h4>
+                </div>
+                <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
+                <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
+                <img class="cart" src="img/buttons/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
+            </div>
+
+            <div class="pro">
+                <?php $item_id = 11; ?>
+                <img class="product" src="img/products/p15.jpg" alt="shirt">
+                <div class="des">
+                    <span>H&Y</span>
+                    <h5>Brown with Gold Hat</h5>
+                    <div class="star">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                    </div>
+                    <h4>$199.99</h4>
+                </div>
+                <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
+                <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
+                <img class="cart" src="img/buttons/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
+            </div>
+
+            <div class="pro">
+                <?php $item_id = 12; ?>
+                <img class="product" src="img/products/p16.jpg" alt="shirt">
+                <div class="des">
+                    <span>H&Y</span>
+                    <h5>Beige with Silver Feather</h5>
+                    <div class="star">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                        <img src="img/star.png" alt="star" height="15px">
+                    </div>
+                    <h4>$279.99</h4>
+                </div>
+                <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
+                <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
+                <img class="cart" src="img/buttons/add-to-cart.png" alt="add-to cart" id="image" onclick="passData(<?php echo $item_id; ?>)">
+            </div>
+        </div>
+    </section>
+
+    <section id="sm-banner" class = "section-p1">
+        <div class="banner-box">
+            <h4>crazy deals</h4>
+            <h2>buy 1 get 1 free</h2>
+            <span>The best classic dress i on sales at H&Y</span>
+            <button class="white">Learn More</button>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4>Love Season</h4>
+            <h2>Valentine's Offer</h2>
+            <span>The best classic dress for Valentines</span>
+            <button class="white">Collection</button>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 

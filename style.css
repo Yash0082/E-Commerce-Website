@@ -51,6 +51,19 @@ button.normal{
     outline: none;
     transition: 0.2s ease;
 }
+
+button.white{
+    font-size: 13px  ;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: rgb(46, 38, 0);
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+    outline: none;
+    transition: 0.2s ease;
+}
+
 body{
     width: 100%;
 }
@@ -267,6 +280,12 @@ body{
     position: absolute;
     bottom: 20px;
     left: 10px;
+    box-shadow: 30px 30px 40px rgba(110, 108, 108, 0.02);
+}
+
+#product1 .pro .cart:hover{
+    box-shadow: 30px 30px 40px rgba(110, 108, 108, 0.06);
+    background-color: #d0b44e;
 }
 
 #banner{
@@ -438,3 +457,68 @@ body{
     padding: 10px;
     font-size: 14px;
 } 
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    background-image: url('img/banner/sm-banner-bg.jpg');
+    min-width: 600px;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+}
+
+#sm-banner .banner-box2{
+    background-image: url('img/banner/sm-banner-bg-2.jpg');
+
+}
+
+#sm-banner h4{
+    color: rgb(111, 50, 9);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#sm-banner h2{
+    color: rgb(46, 38, 0);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span{
+    color: wheat;
+    font-size: 13px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box2 span{
+    color: rgb(93, 50, 80);
+    font-size: 13px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+    background: beige;
+    border: 1px solid beige;
+}
+
+#sm-banner .banner-box2:hover button{
+    background: rgb(255, 193, 242);
+    border: 1px solid rgb(255, 193, 242);
+}
+
+
+
+
