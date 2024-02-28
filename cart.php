@@ -39,6 +39,32 @@
             };
             xhr.send("item_id=" + item_id);
         }
+
+        //Script to update subtotal
+
+        // function updateSubtotal(){
+        //     var xhr = new XMLHttpRequest();
+        //     xhr.open("GET", "add-item.php", true);
+        //     xhr.onreadystatechange = function() {
+        //         if (xhr.readyState === 4 && xhr.status === 200) {
+        //             var totalValue = xhr.responseText;
+        //             document.getElementById("subtotal_value").innerHTML = totalValue;
+        //         }
+        //     };
+        //     xhr.send("subtotal_item_id=" + document.getElementById("subtotal_value").id);
+        // }
+        function updateSubtotal(itemId) {
+            var quantity = document.getElementById("quantity-" + itemId).value;
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "add-item.php?subtotal_item_id=" + itemId + "&quantity=" + quantity, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var subtotalValue = xhr.responseText;
+                    document.getElementById("subtotal-" + itemId).innerHTML = "₹" + subtotalValue;
+                }
+            };
+            xhr.send();
+        }
     </script>
 
 </head>
@@ -112,8 +138,8 @@
                                 <td><img src="img/products/<?php echo $all_items_id; ?>.jpg" alt=""></td>
                                 <td><?php echo $item_name; ?></td>
                                 <td><?php echo "₹" . $item_price; ?></td>
-                                <td><input type="number" id="quantity" value="<?php echo $item_quantity; ?>" min="1" onchange="updateItem(<?php echo $all_items_id; ?>, this.value)"></td>
-                                <td><?php echo "₹" . $item_price * $item_quantity; ?></td>
+                                <td><input type="number" id="quantity-<?php echo $item_id; ?>" value="<?php echo $item_quantity; ?>" min="1" onchange="updateItem(<?php echo $all_items_id; ?>, this.value); updateSubtotal(<?php echo $item_id; ?>)"></td>
+                                <td id="subtotal-<?php echo $item_id; ?>"><?php echo "₹" . $item_price * $item_quantity; ?></td>
                             </tr>
 
                         <?php
@@ -134,14 +160,14 @@
 
                 <!-- ------------------------------------------------------------- -->
                 <!-- Static item values -->
-                <tr>
+                <!-- <tr>
                     <td><a href="#"><img class="rem-btn" src="img/buttons/x-button.png" alt="Remove"></a></td>
                     <td><img src="img/products/1.jpg" alt=""></td>
                     <td>Lei of Aloha Midnight</td>
                     <td>$79.99</td>
                     <td><input type="number" value="1"></td>
                     <td>$79.99</td>
-                </tr>
+                </tr> -->
                 <!-- Static item values -->
 
             </tbody>
