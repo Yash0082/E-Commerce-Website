@@ -45,7 +45,7 @@
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><img width="24" height="24" src="https://img.icons8.com/wired/64/shopping-bag--v1.png" alt="shopping-bag--v1" /></a>
+            <a href="cart.php"><img width="24" height="24" src="https://img.icons8.com/wired/64/shopping-bag--v1.png" alt="shopping-bag--v1" /></a>
             <i id="bar" class ="fas fa-outdent"></i>
         </div>
     </section>
@@ -240,7 +240,7 @@
         <div class="pro-container">
             <div class="pro">
                 <?php $item_id = 7; ?>
-                <img class="product" src="img/products/p11.jpg" alt="shirt">
+                <img class="product" src="img/products/<?php echo $item_id; ?>.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
                     <h5>Palm Shorts</h5>
@@ -273,7 +273,7 @@
 
             <div class="pro">
                 <?php $item_id = 8; ?>
-                <img class="product" src="img/products/p12.jpg" alt="shirt">
+                <img class="product" src="img/products/<?php echo $item_id; ?>.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
                     <h5>White Flower Shorts</h5>
@@ -294,7 +294,7 @@
 
             <div class="pro">
                 <?php $item_id = 9; ?>
-                <img class="product" src="img/products/p13.jpg" alt="shirt">
+                <img class="product" src="img/products/<?php echo $item_id; ?>.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
                     <h5>Island Blue shorts</h5>
@@ -315,7 +315,7 @@
 
             <div class="pro">
                 <?php $item_id = 10; ?>
-                <img class="product" src="img/products/p14.jpg" alt="shirt">
+                <img class="product" src="img/products/<?php echo $item_id; ?>.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
                     <h5>Grey Vintage Hat</h5>
@@ -335,7 +335,7 @@
 
             <div class="pro">
                 <?php $item_id = 11; ?>
-                <img class="product" src="img/products/p15.jpg" alt="shirt">
+                <img class="product" src="img/products/<?php echo $item_id; ?>.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
                     <h5>Brown with Gold Hat</h5>
@@ -355,7 +355,7 @@
 
             <div class="pro">
                 <?php $item_id = 12; ?>
-                <img class="product" src="img/products/p16.jpg" alt="shirt">
+                <img class="product" src="img/products/<?php echo $item_id; ?>.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
                     <h5>Beige with Silver Feather</h5>
