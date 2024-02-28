@@ -32,7 +32,7 @@
 
 <body>
     <section id="header">
-        <a href="index.html" class="logo"><img height="60px" src="img/H_Y-removebg-preview.png" alt="logo"></a>
+        <a href="index.php" class="logo"><img height="60px" src="img/H_Y-removebg-preview.png" alt="logo"></a>
 
         <div>
             <ul id="navbar">
@@ -40,7 +40,7 @@
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li id="lg-bag"><a href="cart.html"><img width="24" height="24" src="https://img.icons8.com/wired/64/shopping-bag--v1.png" alt="shopping-bag--v1" /></a></li>
+                <li id="lg-bag"><a href="cart.php"><img width="24" height="24" src="https://img.icons8.com/wired/64/shopping-bag--v1.png" alt="shopping-bag--v1" /></a></li>
                 <a href="#" id="close"><img height = "20" src="img/buttons/cancel.png" alt="cancel" ></a>
             </ul>
         </div>
@@ -93,7 +93,7 @@
         <div class="pro-container">
             <div class="pro">
                 <?php $item_id = 1; ?>
-                <img class="product" src="img/products/p1.jpg" alt="shirt">
+                <img class="product" src="img/products/<?php echo $item_id; ?>.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
                     <h5>Lei of Aloha Midnight</h5>
@@ -126,7 +126,7 @@
 
             <div class="pro">
                 <?php $item_id = 2; ?>
-                <img class="product" src="img/products/p2.jpg" alt="shirt">
+                <img class="product" src="img/products/<?php echo $item_id; ?>.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
                     <h5>Kahala Hibiscus Navy</h5>
@@ -147,7 +147,7 @@
 
             <div class="pro">
                 <?php $item_id = 3; ?>
-                <img class="product" src="img/products/p3.jpg" alt="shirt">
+                <img class="product" src="img/products/<?php echo $item_id; ?>.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
                     <h5>Flamingo Island Blue</h5>
@@ -168,7 +168,7 @@
 
             <div class="pro">
                 <?php $item_id = 4; ?>
-                <img class="product" src="img/products/p4.jpg" alt="shirt">
+                <img class="product" src="img/products/<?php echo $item_id; ?>.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
                     <h5>Kahala Hibiscus White</h5>
@@ -188,7 +188,7 @@
 
             <div class="pro">
                 <?php $item_id = 5; ?>
-                <img class="product" src="img/products/p5.jpg" alt="shirt">
+                <img class="product" src="img/products/<?php echo $item_id; ?>.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
                     <h5>Kahala Hibiscus Yellow</h5>
@@ -208,7 +208,7 @@
 
             <div class="pro">
                 <?php $item_id = 6; ?>
-                <img class="product" src="img/products/p6.jpg" alt="shirt">
+                <img class="product" src="img/products/<?php echo $item_id; ?>.jpg" alt="shirt">
                 <div class="des">
                     <span>H&Y</span>
                     <h5>Lei of Aloha Sky</h5>
