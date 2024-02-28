@@ -8,8 +8,8 @@
     <link rel="icon" type="image/png" href="img/H_Y-removebg-preview.png">
     <link rel="stylesheet" href="style.css">
 
-    <!-- Script for updating cart items -->
     <script>
+        // Script for updating cart items
         function updateItem(itemId, quantity) {
             var xhr = new XMLHttpRequest();
             xhr.open("POST", "add-item.php", true);
@@ -21,8 +21,26 @@
             };
             xhr.send("item_id=" + itemId + "&quantity=" + quantity);
         }
+
+        // Script for Deleting items
+        function deleteItem(item_id) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "delete-item.php", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText); // Output: Response from delete-item.php
+                    // Remove the item from the page
+                    var item = document.getElementById("item-" + item_id);
+                    if (item) {
+                        item.remove();
+                    }
+                }
+            };
+            xhr.send("item_id=" + item_id);
+        }
     </script>
-    <!-- Script for updating cart items -->
+
 </head>
 
 <body>
@@ -89,8 +107,8 @@
                             $item_quantity = $row['item_quantity'];
                 ?>
 
-                            <tr>
-                                <td><a href="#"><img class="rem-btn" src="img/buttons/x-button.png" alt="Remove"></a></td>
+                            <tr id="item-<?php echo $item_id ?>">
+                                <td><img class="rem-btn" src="img/buttons/x-button.png" alt="Remove" onclick="deleteItem(<?php echo $item_id; ?>)"></a></td>
                                 <td><img src="img/products/<?php echo $all_items_id; ?>.jpg" alt=""></td>
                                 <td><?php echo $item_name; ?></td>
                                 <td><?php echo "₹" . $item_price; ?></td>
