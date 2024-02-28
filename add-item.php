@@ -75,17 +75,14 @@ if (isset($_POST['quantity'])) {
 }
 
 
-// get-cart-total.php
+// Update subtotal of items
 // Calculate the total value of items in the cart
-// For example, if items are stored in $_SESSION['cart_items'], you can calculate the total like this:
-// Query to fetch items from the database
-
 if (isset($_GET['subtotal_item_id'])) {
     $subtotal_item_id = $_GET['subtotal_item_id'];
     $quantity = $_GET['quantity'];
 
     $conn3 = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD, DB_NAME) or die(mysqli_error($conn3));
-    $sql3 = "SELECT item_price * $quantity AS subtotal FROM cart WHERE item_id = '$subtotal_item_id'";
+    $sql3 = "SELECT ROUND(item_price * $quantity, 2) AS subtotal FROM cart WHERE item_id = '$subtotal_item_id'";
     $res3 = mysqli_query($conn3, $sql3);
 
     if (mysqli_num_rows($res3) > 0) {

@@ -41,18 +41,6 @@
         }
 
         //Script to update subtotal
-
-        // function updateSubtotal(){
-        //     var xhr = new XMLHttpRequest();
-        //     xhr.open("GET", "add-item.php", true);
-        //     xhr.onreadystatechange = function() {
-        //         if (xhr.readyState === 4 && xhr.status === 200) {
-        //             var totalValue = xhr.responseText;
-        //             document.getElementById("subtotal_value").innerHTML = totalValue;
-        //         }
-        //     };
-        //     xhr.send("subtotal_item_id=" + document.getElementById("subtotal_value").id);
-        // }
         function updateSubtotal(itemId) {
             var quantity = document.getElementById("quantity-" + itemId).value;
             var xhr = new XMLHttpRequest();
