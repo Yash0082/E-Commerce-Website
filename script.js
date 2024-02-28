@@ -1,11 +1,14 @@
-// function passData(item_id) {
-//     var xhr = new XMLHttpRequest();
-//     xhr.open("POST", "add-item.php", true);
-//     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-//     xhr.onreadystatechange = function() {
-//         if (xhr.readyState === 4 && xhr.status === 200) {
-//             console.log(xhr.responseText); // Output: your_data_to_pass
-//         }
-//     };
-//     xhr.send("item_id=" + encodeURIComponent(item_id));
-// }
+const bar =document.getElementById("bar");
+const close =document.getElementById("close");
+const nav = document.getElementById("navbar");
+
+if(bar){
+    bar.addEventListener('click',()=>{
+        nav.classList.add('active');
+    })
+}
+if(close){
+    close.addEventListener('click',()=>{
+        nav.classList.remove('active');
+    })
+}
