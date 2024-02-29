@@ -223,7 +223,7 @@
     <section id= "newsletter" class=" section-p1 section-m1">
         <div class="newstext">
             <h4>Sign Up for Newsletter</h4>
-            <p>Get E-mail update about  our latestt shop and <span>Special Offers.</span></p>
+            <p>Get E-mail update about  our latest shop and <span>Special Offers.</span></p>
         </div>
 
         <div class="form">

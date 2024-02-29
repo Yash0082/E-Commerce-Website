@@ -55,7 +55,7 @@
             <h4>Trade-in-offer</h4>
             <h2>Super valued deals</h2>
             <h1>On all products</h1>
-            <p>Save more with coupones &up to 60%</p>
+            <p>Save more with coupons & upto 60%</p>
             <button>Shop Now</button>
         </div>
     </section>
