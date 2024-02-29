@@ -31,6 +31,6 @@ Refer This image if required for importing the database .sql file: <br>
 ![Import image](https://github.com/Yash0082/E-Commerce-Website/blob/fa2d1118115b100ec92aad02c5a34e4b201fb936/img/ReadMe_php_import_deets.png?raw=true)
 <br>
 
-9. The Database with it's tables is now successfully created. Now move the cloned repo file into the htdocs file in the xampp folder which will be present in your drive.
-10. Again, on the browser click on localhost followed by the name of the file i.e. "http://localhost/E-Commerce-Website/index.php"
-11. The Website should work.
+8. The Database with it's tables is now successfully created. Now move the cloned repo file into the htdocs file in the xampp folder which will be present in your drive.
+9. Again, on the browser click on localhost followed by the name of the file i.e. "http://localhost/E-Commerce-Website/index.php"
+10. The Website should work.
