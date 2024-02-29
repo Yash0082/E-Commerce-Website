@@ -215,7 +215,7 @@
                     }
                     ?>
             </table>
-            <button class="normal">Proceed to checkout</button>
+            <button class="normal" onclick="window.location.reload();">Proceed to checkout</button>
 
         </div>
     </section>

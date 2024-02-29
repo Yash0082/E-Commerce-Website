@@ -37,9 +37,9 @@
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.php">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.php">Shop</a></li>
+                <li><a href="index.php">About</a></li>
+                <li><a href="index.php">Contact Us</a></li>
                 <li id="lg-bag"><a href="cart.php"><img width="24" height="24" src="https://img.icons8.com/wired/64/shopping-bag--v1.png" alt="shopping-bag--v1" /></a></li>
                 <a href="#" id="close"><img height = "20" src="img/buttons/cancel.png" alt="cancel" ></a>
             </ul>
@@ -411,7 +411,7 @@
     <section id= "newsletter" class=" section-p1 section-m1">
         <div class="newstext">
             <h4>Sign Up for Newsletter</h4>
-            <p>Get E-mail update about  our latestt shop and <span>Special Offers.</span></p>
+            <p>Get E-mail update about  our latest shop and <span>Special Offers.</span></p>
         </div>
 
         <div class="form">

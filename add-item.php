@@ -1,19 +1,3 @@
-<!-- <html>
-    <script>
-            
-            function update_subtotal(quantity) {
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", "cart.php", true);
-            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    console.log(xhr.responseText); // Output: Response from add-item.php
-                }
-            };
-            xhr.send("quantity=" + quantity);
-        }
-    </script>
-</html> -->
 <?php
 
 include('config/constants.php');
