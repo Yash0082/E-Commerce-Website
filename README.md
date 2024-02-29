@@ -17,7 +17,7 @@ This site has features that include:<br>
 * XAMPP - Apache Server, MySQL Database, PHP, and Front-end stack.
 <br>
 
-##### To use our website:
+# Getting Started:
 1. Clone this repo or if you have a zip file of it, then unzip it.
 2. In the [config/constants.php] file, replace the constants value with your own database constants.
 3. Install XAMPP, While installing it, don't forget to check the checkbox for installing MySQL, Apache Server, and phpmyadmin.
