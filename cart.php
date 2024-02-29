@@ -53,6 +53,21 @@
             };
             xhr.send();
         }
+
+        //Script to update total
+        function updateTotal() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "add-item.php?total=true", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var totalValue = xhr.responseText;
+                    document.getElementById("totalPrice").innerHTML = "₹" + totalValue;
+                    console.log(totalValue);
+                }
+            };
+            xhr.send();
+            // console.log(totalValue);
+        }
     </script>
 
 </head>
@@ -126,7 +141,7 @@
                                 <td><img src="img/products/<?php echo $all_items_id; ?>.jpg" alt=""></td>
                                 <td><?php echo $item_name; ?></td>
                                 <td><?php echo "₹" . $item_price; ?></td>
-                                <td><input type="number" id="quantity-<?php echo $item_id; ?>" value="<?php echo $item_quantity; ?>" min="1" onchange="updateItem(<?php echo $all_items_id; ?>, this.value); updateSubtotal(<?php echo $item_id; ?>)"></td>
+                                <td><input type="number" id="quantity-<?php echo $item_id; ?>" value="<?php echo $item_quantity; ?>" min="1" onchange="updateItem(<?php echo $all_items_id; ?>, this.value); updateSubtotal(<?php echo $item_id; ?>); updateTotal()"></td>
                                 <td id="subtotal-<?php echo $item_id; ?>"><?php echo "₹" . $item_price * $item_quantity; ?></td>
                             </tr>
 
@@ -173,21 +188,34 @@
         <div id="subtotal">
             <h3>Cart Total</h3>
             <table>
+                <?php 
+                    $conn2 = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD, DB_NAME) or die(mysqli_error($conn2));
+                    $sql2 = "SELECT SUM(ROUND((item_price * item_quantity),2)) AS totalValue FROM cart"; 
+                    $res2 = mysqli_query($conn2, $sql2);
+
+                    if($res2 && (mysqli_num_rows($res2))>0)
+                    {
+                        $row = mysqli_fetch_assoc($res2);
+                        $totalValue = $row['totalValue'];
+                ?>
                 <tr>
                     <td>Cart Subtotal</td>
-                    <td>$80</td>
+                    <td id="totalPrice">₹<?php echo round($totalValue, 2); ?></td>
                 </tr>
+
                 <tr>
                     <td>Shipping</td>
                     <td>Free</td>
                 </tr>
                 <tr>
                     <td><strong>Total</strong></td>
-                    <td><strong>$80</strong></td>
+                    <td><strong>₹<?php echo round($totalValue); ?></strong></td>
                 </tr>
-
+                <?php 
+                    }
+                    ?>
             </table>
-            <button class="normal">Proceed to checkout</button>
+            <button class="normal" onclick="window.location.reload();">Proceed to checkout</button>
 
         </div>
     </section>

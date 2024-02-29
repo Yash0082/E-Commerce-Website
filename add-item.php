@@ -1,19 +1,3 @@
-<!-- <html>
-    <script>
-            
-            function update_subtotal(quantity) {
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", "cart.php", true);
-            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    console.log(xhr.responseText); // Output: Response from add-item.php
-                }
-            };
-            xhr.send("quantity=" + quantity);
-        }
-    </script>
-</html> -->
 <?php
 
 include('config/constants.php');
@@ -94,6 +78,20 @@ if (isset($_GET['subtotal_item_id'])) {
         $row = mysqli_fetch_assoc($res3);
         $subtotalValue = $row["subtotal"];
         echo $subtotalValue;
+    } else {
+        echo "0";
+    }
+}
+
+if (isset($_GET['total'])) {
+    $conn4 = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD, DB_NAME) or die(mysqli_error($conn4));
+    $sql4 = "SELECT SUM(ROUND((item_price * item_quantity),2)) AS totalValue FROM cart";
+    $res4 = mysqli_query($conn4, $sql4);
+
+    if ($res4 && mysqli_num_rows($res4) > 0) {
+        $row = mysqli_fetch_assoc($res4);
+        $totalValue = $row["totalValue"];
+        echo $totalValue;
     } else {
         echo "0";
     }
