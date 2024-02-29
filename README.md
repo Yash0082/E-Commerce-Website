@@ -22,9 +22,10 @@ This site has features that include:<br>
 2. In the [config/constants.php] file, replace the constants value with your own database constants.
 3. Install XAMPP, While installing it, don't forget to check the checkbox for installing MySQL, Apache Server, and phpmyadmin.
 4. Open XAMPP, start Apache server and MySQL.
-5. Open a Browser, Type in 'localhost'
-6. There, click on 'phpmyadmin' in the navigation pane.
-7. On phpmyadmin, import the database file provided in the repo. Note - On importing the database file, select the "Character set of the file: " to be utf-16 and then import it.
+5. Open a Browser, Type in ' ```localhost``` '
+6. There, click on ' ```phpmyadmin``` ' in the navigation pane.
+7. On phpmyadmin, import the database file provided in the repo.
+ - Note - On importing the database file, select the "Character set of the file: " to be  ```utf-16``` and then import it.
 <br>
 Refer This image if required for importing the database .sql file: <br>
 
