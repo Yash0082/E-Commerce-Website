@@ -104,7 +104,7 @@
                         <img src="img/star.png" alt="star" height="15px">
                         <img src="img/star.png" alt="star" height="15px">
                     </div>
-                    <h4>$79.99</h4>
+                    <h4>₹79.99</h4>
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<? //php echo "http://localhost/E-Commerce-Website/"; 
@@ -137,7 +137,7 @@
                         <img src="img/star.png" alt="star" height="15px">
                         <img src="img/star.png" alt="star" height="15px">
                     </div>
-                    <h4>$79.99</h4>
+                    <h4>₹79.99</h4>
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>">    <img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
@@ -158,7 +158,7 @@
                         <img src="img/star.png" alt="star" height="15px">
                         <img src="img/star.png" alt="star" height="15px">
                     </div>
-                    <h4>$79.99</h4>
+                    <h4>₹79.99</h4>
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
@@ -179,7 +179,7 @@
                         <img src="img/star.png" alt="star" height="15px">
                         <img src="img/star.png" alt="star" height="15px">
                     </div>
-                    <h4>$79.99</h4>
+                    <h4>₹79.99</h4>
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
@@ -199,7 +199,7 @@
                         <img src="img/star.png" alt="star" height="15px">
                         <img src="img/star.png" alt="star" height="15px">
                     </div>
-                    <h4>$79.99</h4>
+                    <h4>₹79.99</h4>
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
@@ -219,7 +219,7 @@
                         <img src="img/star.png" alt="star" height="15px">
                         <img src="img/star.png" alt="star" height="15px">
                     </div>
-                    <h4>$79.99</h4>
+                    <h4>₹79.99</h4>
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
@@ -251,7 +251,7 @@
                         <img src="img/star.png" alt="star" height="15px">
                         <img src="img/star.png" alt="star" height="15px">
                     </div>
-                    <h4>$179.99</h4>
+                    <h4>₹179.99</h4>
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<? //php echo "http://localhost/E-Commerce-Website/"; 
@@ -284,7 +284,7 @@
                         <img src="img/star.png" alt="star" height="15px">
                         <img src="img/star.png" alt="star" height="15px">
                     </div>
-                    <h4>$149.99</h4>
+                    <h4>₹149.99</h4>
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>">    <img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
@@ -305,7 +305,7 @@
                         <img src="img/star.png" alt="star" height="15px">
                         <img src="img/star.png" alt="star" height="15px">
                     </div>
-                    <h4>$199.99</h4>
+                    <h4>₹199.99</h4>
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
@@ -326,7 +326,7 @@
                         <img src="img/star.png" alt="star" height="15px">
                         <img src="img/star.png" alt="star" height="15px">
                     </div>
-                    <h4>$179.99</h4>
+                    <h4>₹179.99</h4>
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
@@ -346,7 +346,7 @@
                         <img src="img/star.png" alt="star" height="15px">
                         <img src="img/star.png" alt="star" height="15px">
                     </div>
-                    <h4>$199.99</h4>
+                    <h4>₹199.99</h4>
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->
@@ -366,7 +366,7 @@
                         <img src="img/star.png" alt="star" height="15px">
                         <img src="img/star.png" alt="star" height="15px">
                     </div>
-                    <h4>$279.99</h4>
+                    <h4>₹279.99</h4>
                 </div>
                 <!-- <a href="#"><img class="cart" src="img/add-to-cart.png" alt="add-to cart" ></a> -->
                 <!-- <a href="<?//php echo "http://localhost/E-Commerce-Website/"; ?>add-item.php?item_id=<?//php echo $item_id; ?>"><img class="cart" src="img/add-to-cart.png" alt="add-to cart"></a> -->

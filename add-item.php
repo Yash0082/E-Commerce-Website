@@ -98,4 +98,18 @@ if (isset($_GET['subtotal_item_id'])) {
         echo "0";
     }
 }
+
+if (isset($_GET['total'])) {
+    $conn4 = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD, DB_NAME) or die(mysqli_error($conn4));
+    $sql4 = "SELECT SUM(ROUND((item_price * item_quantity),2)) AS totalValue FROM cart";
+    $res4 = mysqli_query($conn4, $sql4);
+
+    if ($res4 && mysqli_num_rows($res4) > 0) {
+        $row = mysqli_fetch_assoc($res4);
+        $totalValue = $row["totalValue"];
+        echo $totalValue;
+    } else {
+        echo "0";
+    }
+}
 ?>
