@@ -1,7 +1,7 @@
+### Authors: Yash Adagale, Harshan Attar
 # E-Commerce-Website
 Last project for TechLeaper Systems Pvt. Ltd.
 <br>
-### Authors: Yash Adagale, Harshan Attar
 
 We've created an e-commerce website that presents to it's users all the fashion apparels including but not limited to shirts, bottoms, etc.
 <br>
